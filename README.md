@@ -13,7 +13,7 @@
 
 ## Steps
 
-- [ ] Create chk_pkgs function
+- [X] Create check_pkgs function
 - [ ] Create add_repo function
 - [ ] Create install_pkgs function
 - [ ] Create ufw_config function
