@@ -14,7 +14,7 @@
 ## Steps
 
 - [X] Create check_pkgs function
-- [ ] Create add_repo function
+- [X] Create add_repo function
 - [ ] Create install_pkgs function
 - [ ] Create ufw_config function
 - [ ] Add color when interacting with the user
