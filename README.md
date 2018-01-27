@@ -16,6 +16,6 @@
 - [X] Create check_pkgs function
 - [X] Create add_repo function
 - [ ] Create install_pkgs function
-- [ ] Create ufw_config function
+- [X] Create ufw_config function
 - [ ] Wrap * functions in main_function
 - [ ] Add color when interacting with the user
