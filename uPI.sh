@@ -167,7 +167,7 @@ main(){
   add_repo
 
   echo "Updating repositories ..."
-  apt update -y 2> /dev/null
+  apt update -y &> /dev/null
 
   echo "Installing new packages ..."
   install_pkgs
@@ -176,10 +176,10 @@ main(){
   ufw_config
 
   echo "upgrading system ..."
-  apt upgrade -y 2> /dev/null
+  apt upgrade -y &> /dev/null
 
   echo "Clearing unnescessary packages ..."
-  apt autoremove -y 2> /dev/null
+  apt autoremove -y &> /dev/null
 
   echo "System's ready!"
 }
