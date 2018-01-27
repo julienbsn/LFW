@@ -99,7 +99,7 @@ add_repo(){
 
 install_pkgs(){
   # install_pkgs function will setup a tiny workstation (minimalistic gnome3, privacy && some security essentials softwares)
-  pkgs_list=("ufw" "curl" "git")
+  pkgs_list=()
   printf "Install pkgs_list? [Y/n] : "
   read -r pkgs_user_choice
   if [[ $pkgs_user_choice == "Y" ]] || [[ $pkgs_user_choice == "y" ]]; then
