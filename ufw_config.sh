@@ -30,7 +30,13 @@ ufw_config(){
       read -r conf_other_rules
     done
   else
-    echo "firewall's setup is finished!"
+    echo "firewall's custom setup is finished!"
+  fi
+
+  printf "enable ip forwarding? [Y/n] : "
+  read -r enable_ip_forward
+  if [[ $enable_ip_forward == "Y" ]] || [[ $enable_ip_forward == "y" ]]; then
+    echo 1 > /proc/sys/net/ipv4/ip_forward
   fi
 
   printf "enable firewall at startup? [Y/n] : "
