@@ -177,14 +177,14 @@ main(){
   echo "Updating repositories ..."
   apt update -y &> /dev/null
 
+  echo "upgrading system's packages ..."
+  apt upgrade -y &> /dev/null
+
   echo "Installing new packages ..."
   install_pkgs
 
   echo "Configuring firewall ..."
   ufw_config
-
-  echo "upgrading system ..."
-  apt upgrade -y &> /dev/null
 
   echo "Clearing unnescessary packages ..."
   apt autoremove -y &> /dev/null
