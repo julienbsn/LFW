@@ -10,8 +10,6 @@
 
 ## Steps
 
+- [ ] Create use cases
 - [X] Create main function
-- [ ]
-- [ ]
-- [ ]
 - [ ] Wrap * functions in main_function
