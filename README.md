@@ -12,4 +12,6 @@
 
 - [ ] Create use cases
 - [X] Create main function
+- [ ] Create ip range blocking option
+- [ ] Create ip geo-region blocking option
 - [ ] Wrap * functions in main_function
