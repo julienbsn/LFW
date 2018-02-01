@@ -40,7 +40,7 @@ ufw_config(){
   if [[ $enable_ip_forward == "Y" ]] || [[ $enable_ip_forward == "y" ]]; then
     echo 1 > /proc/sys/net/ipv4/ip_forward
     echo "restarting procps service ..."
-    /etc/init.d/procps.sh restart
+    /etc/init.d/procps restart
   fi
 
   printf "enable firewall at startup? [Y/n] : "
