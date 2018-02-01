@@ -47,6 +47,8 @@ ufw_config(){
   read -r enable_startup
   if [ $enable_startup = "Y" ] || [ $enable_startup = "y" ]; then
     ufw enable
+    echo "Firewall current status :"
+    ufw status verbose
   else
     echo "firewall is configured but not enabled ..."
   fi
